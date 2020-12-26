@@ -1,0 +1,259 @@
+body {
+	background: #747474;
+}
+.start-screen {
+	height: 640px;
+	width: 360px;
+	margin: 0px auto;
+	margin-top: 50px;
+}
+.start {
+}
+.start__wrapper {
+	height: 640px;
+	width: 360px;
+	background: url(../img/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+/*  Главная шкала  */
+.start__measure {
+	position: absolute;
+	left: 92px;
+	top: 92px;
+}
+.measure {
+}
+.measure__wrapper {
+	height: 324px;
+	width: 170px;
+}
+.measure__main {
+	position: relative;
+}
+.measure__scale-1 {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -39px;
+	/* margin-left: -22%; */
+}
+.measure__ruby {
+	display: block;
+	position: absolute;
+	top: 28px;
+	left: 50%;
+	margin-left: -24px;
+	/* margin-left: -13%; */
+}
+
+/*  Шкала удара  */
+.start__scale {
+	position: absolute;
+	left: 23px;
+	bottom: 64px;
+}
+.scale {
+}
+.scale__wrapper {
+}
+.scale__bg {
+	position: relative;
+}
+.scale__flare {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 6;
+}
+.scale__marks {
+	position: absolute;
+	left: 10px;
+	top: 8px;
+	z-index: 6;
+}
+.scale__hr-line {
+	position: absolute;
+	top: 145px;
+	left: -5px;
+	z-index: 10;
+}
+.scale__hr-line--hidden {
+	display: none;
+}
+.scale__bar {
+	position: absolute;
+	left: 3px;
+	bottom: 3px;
+	z-index: 5;
+	height: 140px;
+	width: 34px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	overflow: hidden;
+}
+.scale__shadow {
+}
+.scale__element {
+	position: absolute;
+	bottom: 0px;
+	background-color: #00d355;
+	width: 34px;
+}
+
+/*  Центральная кнопка  */
+.start__button {
+	position: absolute;
+	left: 115px;
+	bottom: 149px;
+}
+.button {
+}
+.button__wrapper {
+}
+.button__button-image {
+}
+.button__button-image--active {
+	display: none;
+}
+
+/*  Молот  */
+.start__hammer {
+	position: absolute;
+	bottom: 123px;
+	right: 55px;
+}
+.hammer {
+}
+.hammer__wrapper {
+}
+.hammer__hammer-image {
+	transform: rotate(-43.16deg);
+}
+
+/*  Текстовый блок  */
+.start__text-block {
+	position: absolute;
+	bottom: 110px;
+	left: 105px;
+}
+.text-block {
+}
+.text-block__wrapper {
+}
+.text-block__paragraph {
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: center;
+	color: #ffffff;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*  Кнопка взаимодействия с пользователем  */
+.start__new-game {
+	position: absolute;
+
+	left: 94px;
+	top: 540px;
+}
+.new-game {
+}
+.new-game__wrapper {
+}
+.new-game__button {
+	width: 172px;
+	height: 36px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	background: #ff42e0;
+	border: 1px solid #ffffff;
+	border-radius: 4px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.new-game__button span {
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+.hit__button {
+	background: #ffdf35;
+	border: 1px solid #bb20a2;
+}
+.new-game__text {
+	color: #ffffff;
+}
+.new-game__text--hidden {
+	display: none;
+}
+.new-game__text--visible {
+	display: block;
+}
+.hit__text {
+	color: #bb20a2;
+}
+.hit__text--hidden {
+	display: none;
+}
+.hit__text--visible {
+	display: block;
+}
+
+/*  Robot  */
+.start__robot {
+	position: absolute;
+	left: 277px;
+	top: 489px;
+
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.robot {
+}
+.robot__wrapper {
+}
+.robot__image-1 {
+}
+
+/*  Navigation  */
+
+.start__nav {
+	position: absolute;
+	bottom: 0px;
+}
+.nav {
+}
+.nav__wrapper {
+	height: 36px;
+	width: 360px;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.nav__flex {
+	width: 172px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav__back,
+.nav__home,
+.nav__apps {
+	cursor: pointer;
+}
+.nav__back {
+}
+.nav__home {
+}
+.nav__apps {
+}
