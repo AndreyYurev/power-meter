@@ -33,7 +33,7 @@ body {
 .measure__main {
 	position: relative;
 }
-.measure__scale-1 {
+.measure__scale {
 	display: block;
 	position: absolute;
 	bottom: 0;
@@ -41,6 +41,10 @@ body {
 	margin-left: -39px;
 	/* margin-left: -22%; */
 }
+.scale--hidden {
+	display: none;
+}
+
 .measure__ruby {
 	display: block;
 	position: absolute;
@@ -100,8 +104,10 @@ body {
 .scale__shadow {
 }
 .scale__element {
+	display: block;
 	position: absolute;
 	bottom: 0px;
+	height: 0px;
 	background-color: #00d355;
 	width: 34px;
 }
@@ -135,6 +141,11 @@ body {
 .hammer__hammer-image {
 	transform: rotate(-43.16deg);
 }
+.hammer__hammer-0deg {
+	transition: 0.2s;
+	transform: rotate(0);
+	transform: translate(20px, -35px);
+}
 
 /*  Текстовый блок  */
 .start__text-block {
@@ -154,6 +165,12 @@ body {
 	text-align: center;
 	color: #ffffff;
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.text-block__paragraph--hit {
+	margin-left: 14px;
+}
+.paragraph--hidden {
+	display: none;
 }
 
 /*  Кнопка взаимодействия с пользователем  */
@@ -185,28 +202,30 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	text-transform: uppercase;
-}
-.hit__button {
-	background: #ffdf35;
-	border: 1px solid #bb20a2;
-}
-.new-game__text {
 	color: #ffffff;
 }
-.new-game__text--hidden {
-	display: none;
+.hit__button {
+	width: 172px;
+	height: 36px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	background: #ffdf35;
+	border: 1px solid #bb20a2;
+	border-radius: 4px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.new-game__text--visible {
-	display: block;
-}
-.hit__text {
+.hit__button span {
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
 	color: #bb20a2;
 }
-.hit__text--hidden {
+.button--hidden {
 	display: none;
-}
-.hit__text--visible {
-	display: block;
 }
 
 /*  Robot  */
@@ -222,6 +241,13 @@ body {
 .robot__wrapper {
 }
 .robot__image-1 {
+}
+.robot__image-2 {
+}
+.robot__image-3 {
+}
+.robot__image--hidden {
+	display: none;
 }
 
 /*  Navigation  */
