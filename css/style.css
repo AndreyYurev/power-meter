@@ -41,13 +41,11 @@ body {
 	margin-left: -39px;
 	/* margin-left: -22%; */
 }
-.scale--hidden {
-	display: none;
-}
 
 .measure__ruby {
 	display: block;
 	position: absolute;
+	z-index: 100;
 	top: 28px;
 	left: 50%;
 	margin-left: -24px;
@@ -85,9 +83,7 @@ body {
 	left: -5px;
 	z-index: 10;
 }
-.scale__hr-line--hidden {
-	display: none;
-}
+
 .scale__bar {
 	position: absolute;
 	left: 3px;
@@ -125,7 +121,7 @@ body {
 .button__button-image {
 }
 .button__button-image--active {
-	display: none;
+	transition: 0.5s;
 }
 
 /*  Молот  */
@@ -145,6 +141,10 @@ body {
 	transition: 0.2s;
 	transform: rotate(0);
 	transform: translate(20px, -35px);
+}
+.hammer__hammer-striker {
+	transition: 0.2s;
+	transform: translate(-50px, -25px) rotateZ(-90deg);
 }
 
 /*  Текстовый блок  */
@@ -169,8 +169,23 @@ body {
 .text-block__paragraph--hit {
 	margin-left: 14px;
 }
-.paragraph--hidden {
-	display: none;
+.text-block__paragraph--under100 {
+	position: relative;
+	left: 5px;
+}
+.text-block__paragraph--under130 {
+	position: relative;
+	left: 17px;
+}
+.text-block__paragraph--hit140 {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	left: -10px;
+	top: 10px;
+}
+.text-block__paragraph--hit140 span {
+	color: #ff4646;
 }
 
 /*  Кнопка взаимодействия с пользователем  */
@@ -184,7 +199,8 @@ body {
 }
 .new-game__wrapper {
 }
-.new-game__button {
+.new-game__button,
+.restart__button {
 	width: 172px;
 	height: 36px;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -196,7 +212,8 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-.new-game__button span {
+.new-game__button span,
+.restart__button span {
 	font-family: Roboto;
 	font-weight: bold;
 	font-size: 14px;
@@ -224,9 +241,6 @@ body {
 	text-transform: uppercase;
 	color: #bb20a2;
 }
-.button--hidden {
-	display: none;
-}
 
 /*  Robot  */
 .start__robot {
@@ -245,9 +259,8 @@ body {
 .robot__image-2 {
 }
 .robot__image-3 {
-}
-.robot__image--hidden {
-	display: none;
+	position: relative;
+	left: -8px;
 }
 
 /*  Navigation  */
@@ -282,4 +295,50 @@ body {
 .nav__home {
 }
 .nav__apps {
+}
+
+.hidden {
+	display: none;
+}
+
+/*  Glow  */
+.start__glow {
+}
+.glow__wrapper {
+}
+.glow__layer-glow {
+	position: absolute;
+	left: 114px;
+	top: 70px;
+	transform: rotate(135deg);
+	z-index: 4;
+}
+.glow__prize-glow {
+	display: none;
+}
+
+/*  Анимация вращения layer-glow  */
+.animated {
+	animation-name: rotation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/*  Спец.классы  */
+
+.transparent {
+	opacity: 0;
+	transition-property: opacity;
+}
+.visible {
+	opacity: 1;
 }
