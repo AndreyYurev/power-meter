@@ -7,7 +7,7 @@ let scaleHorLineAnimation = anime({
 	loop: true,
 	autoplay: false,
 	easing: 'linear',
-	duration: 1000
+	duration: 300
 });
 
 // Заполняющаяся полоса
@@ -18,7 +18,7 @@ let scaleBarAnimation = anime({
 	loop: true,
 	autoplay: false,
 	easing: 'linear',
-	duration: 1000
+	duration: 300
 });
 
 // Назначение начала анимации при нажатии на кнопку
