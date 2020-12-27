@@ -1,13 +1,24 @@
 body {
-	background: #747474;
+	background-image: url("https://repository-images.githubusercontent.com/214671270/23f88b80-ed18-11e9-8a21-0a636b193f08");
+	background-size: cover;
+
+	height: 100vh;
+	padding: 0;
+	margin: 0;
 }
 .start-screen {
 	height: 640px;
 	width: 360px;
 	margin: 0px auto;
 	margin-top: 50px;
+	-webkit-box-shadow: 0px 0px 242px 45px rgba(0, 0, 250, 0.19);
+	-moz-box-shadow: 0px 0px 242px 45px rgba(0, 0, 250, 0.19);
+	box-shadow: 0px 0px 242px 45px rgba(0, 0, 250, 0.19);
 }
-.start {
+@media (max-width: 480px) {
+	.start-screen {
+		margin-top: 10px;
+	}
 }
 .start__wrapper {
 	height: 640px;
@@ -18,13 +29,11 @@ body {
 	position: relative;
 }
 
-/*  Главная шкала  */
+/*================================================================  Главная шкала  ================================================================*/
 .start__measure {
 	position: absolute;
 	left: 92px;
 	top: 92px;
-}
-.measure {
 }
 .measure__wrapper {
 	height: 324px;
@@ -39,9 +48,7 @@ body {
 	bottom: 0;
 	left: 50%;
 	margin-left: -39px;
-	/* margin-left: -22%; */
 }
-
 .measure__ruby {
 	display: block;
 	position: absolute;
@@ -49,18 +56,13 @@ body {
 	top: 28px;
 	left: 50%;
 	margin-left: -24px;
-	/* margin-left: -13%; */
 }
 
-/*  Шкала удара  */
+/*================================================================  Шкала удара  ================================================================*/
 .start__scale {
 	position: absolute;
 	left: 23px;
 	bottom: 64px;
-}
-.scale {
-}
-.scale__wrapper {
 }
 .scale__bg {
 	position: relative;
@@ -83,7 +85,6 @@ body {
 	left: -5px;
 	z-index: 10;
 }
-
 .scale__bar {
 	position: absolute;
 	left: 3px;
@@ -97,8 +98,6 @@ body {
 	border-top-right-radius: 3px;
 	overflow: hidden;
 }
-.scale__shadow {
-}
 .scale__element {
 	display: block;
 	position: absolute;
@@ -108,31 +107,21 @@ body {
 	width: 34px;
 }
 
-/*  Центральная кнопка  */
+/*================================================================  Центральная кнопка  ================================================================*/
 .start__button {
 	position: absolute;
 	left: 115px;
 	bottom: 149px;
 }
-.button {
-}
-.button__wrapper {
-}
-.button__button-image {
-}
 .button__button-image--active {
 	transition: 0.5s;
 }
 
-/*  Молот  */
+/*================================================================  Молот  ================================================================*/
 .start__hammer {
 	position: absolute;
 	bottom: 123px;
 	right: 55px;
-}
-.hammer {
-}
-.hammer__wrapper {
 }
 .hammer__hammer-image {
 	transform: rotate(-43.16deg);
@@ -147,15 +136,11 @@ body {
 	transform: translate(-50px, -25px) rotateZ(-90deg);
 }
 
-/*  Текстовый блок  */
+/*================================================================  Текстовый блок  ================================================================*/
 .start__text-block {
 	position: absolute;
 	bottom: 110px;
 	left: 105px;
-}
-.text-block {
-}
-.text-block__wrapper {
 }
 .text-block__paragraph {
 	font-family: Roboto;
@@ -188,32 +173,28 @@ body {
 	color: #ff4646;
 }
 
-/*  Кнопка взаимодействия с пользователем  */
+/*================================================================  Кнопка взаимодействия с пользователем  ================================================================*/
 .start__new-game {
 	position: absolute;
-
 	left: 94px;
 	top: 540px;
 }
-.new-game {
-}
-.new-game__wrapper {
-}
 .new-game__button,
-.restart__button {
+.restart__button,
+.hit__button {
 	width: 172px;
 	height: 36px;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	background: #ff42e0;
 	border: 1px solid #ffffff;
 	border-radius: 4px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .new-game__button span,
-.restart__button span {
+.restart__button span,
+.hit__button span {
 	font-family: Roboto;
 	font-weight: bold;
 	font-size: 14px;
@@ -222,27 +203,14 @@ body {
 	color: #ffffff;
 }
 .hit__button {
-	width: 172px;
-	height: 36px;
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	background: #ffdf35;
 	border: 1px solid #bb20a2;
-	border-radius: 4px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .hit__button span {
-	font-family: Roboto;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 16px;
-	text-transform: uppercase;
 	color: #bb20a2;
 }
 
-/*  Robot  */
+/*================================================================  Robot  ================================================================*/
 .start__robot {
 	position: absolute;
 	left: 277px;
@@ -250,26 +218,15 @@ body {
 
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.robot {
-}
-.robot__wrapper {
-}
-.robot__image-1 {
-}
-.robot__image-2 {
-}
 .robot__image-3 {
 	position: relative;
 	left: -8px;
 }
 
-/*  Navigation  */
-
+/*================================================================  Navigation  ================================================================*/
 .start__nav {
 	position: absolute;
 	bottom: 0px;
-}
-.nav {
 }
 .nav__wrapper {
 	height: 36px;
@@ -290,22 +247,8 @@ body {
 .nav__apps {
 	cursor: pointer;
 }
-.nav__back {
-}
-.nav__home {
-}
-.nav__apps {
-}
 
-.hidden {
-	display: none;
-}
-
-/*  Glow  */
-.start__glow {
-}
-.glow__wrapper {
-}
+/*================================================================  Glow  ================================================================*/
 .glow__layer-glow {
 	position: absolute;
 	left: 114px;
@@ -317,7 +260,7 @@ body {
 	display: none;
 }
 
-/*  Анимация вращения layer-glow  */
+/*================================================================  Анимация вращения layer-glow  ================================================================*/
 .animated {
 	animation-name: rotation;
 	animation-duration: 4s;
@@ -333,8 +276,10 @@ body {
 	}
 }
 
-/*  Спец.классы  */
-
+/*================================================================  Спец.классы  ================================================================*/
+.hidden {
+	display: none;
+}
 .transparent {
 	opacity: 0;
 	transition-property: opacity;
