@@ -19,7 +19,16 @@
 			<div class="start__measure measure">
 				<div class="measure__wrapper">
 					<img src="./img/measure/measure_main.png" alt="" class="measure__main">
-					<img src="./img/measure/measure_1.png" alt="" class="measure__scale-1">
+					<img src="./img/measure/measure_1.png" alt="" class="measure__scale scale-1">
+					<img src="./img/measure/measure_2.png" alt="" class="measure__scale scale-2 scale--hidden">
+					<img src="./img/measure/measure_3.png" alt="" class="measure__scale scale-3 scale--hidden">
+					<img src="./img/measure/measure_4.png" alt="" class="measure__scale scale-4 scale--hidden">
+					<img src="./img/measure/measure_5.png" alt="" class="measure__scale scale-5 scale--hidden">
+					<img src="./img/measure/measure_6.png" alt="" class="measure__scale scale-6 scale--hidden">
+					<img src="./img/measure/measure_7.png" alt="" class="measure__scale scale-7 scale--hidden">
+					<img src="./img/measure/measure_8.png" alt="" class="measure__scale scale-8 scale--hidden">
+					<img src="./img/measure/measure_9.png" alt="" class="measure__scale scale-9 scale--hidden">
+
 					<img src="./img/measure/measure_ruby.png" alt="" class="measure__ruby">
 				</div>
 				<!-- /.measure__wrapper -->
@@ -35,7 +44,7 @@
 				</div>
 				<div class="scale__bar">
 					<div class="scale__shadow"></div>
-					<div class="scale__element"></div>
+					<div id="menu_bottom" class="scale__element"></div>
 				</div>
 				<!-- /.scale__animation -->
 				<!-- /.scale__wrapper -->
@@ -61,7 +70,9 @@
 
 			<div class="start__text-block text-block">
 				<div class="text-block__wrapper">
-					<p class="text-block__paragraph">Привет! <br> проверим твою силу!</p>
+					<p class="text-block__paragraph text-block__paragraph--start  ">Привет! <br> проверим твою силу!</p>
+					<p class="text-block__paragraph text-block__paragraph--hit paragraph--hidden">Жми на кнопку <br> в нужный
+						момент!</p>
 				</div>
 				<!-- /.text-block__wrapper -->
 			</div>
@@ -71,9 +82,12 @@
 				<div class="new-game__wrapper">
 					<button class="new-game__button">
 						<span class="new-game__text">новая игра</span>
-						<span class="hit__text hit__text--hidden">удар!</span>
 					</button>
 					<!-- /.new-game__button -->
+					<button class="hit__button button--hidden">
+						<span class="hit__text">удар!</span>
+					</button>
+					<!-- /.hit__button -->
 				</div>
 				<!-- /.new-game__wrapper -->
 			</div>
@@ -81,7 +95,9 @@
 
 			<div class="start__robot robot">
 				<div class="robot__wrapper">
-					<img src="./img/robot/robot_1.png" alt="" class="robot__image-1">
+					<img src="./img/robot/robot_1.png" alt="" class="robot__image robot__image-1 ">
+					<img src="./img/robot/robot_2.png" alt="" class="robot__image robot__image-2 robot__image--hidden">
+					<img src="./img/robot/robot_3.png" alt="" class="robot__image robot__image-3 robot__image--hidden">
 				</div>
 				<!-- /.robot__wrapper -->
 			</div>
@@ -105,7 +121,7 @@
 	</section>
 	<!-- /.start-screen -->
 
-
+	<script type="text/javascript" language="javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
 	<script src="./js/anime.min.js"></script>
 	<script src="./js/script.js"></script>
 </body>
