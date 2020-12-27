@@ -20,14 +20,14 @@
 				<div class="measure__wrapper">
 					<img src="./img/measure/measure_main.png" alt="" class="measure__main">
 					<img src="./img/measure/measure_1.png" alt="" class="measure__scale scale-1">
-					<img src="./img/measure/measure_2.png" alt="" class="measure__scale scale-2 scale--hidden">
-					<img src="./img/measure/measure_3.png" alt="" class="measure__scale scale-3 scale--hidden">
-					<img src="./img/measure/measure_4.png" alt="" class="measure__scale scale-4 scale--hidden">
-					<img src="./img/measure/measure_5.png" alt="" class="measure__scale scale-5 scale--hidden">
-					<img src="./img/measure/measure_6.png" alt="" class="measure__scale scale-6 scale--hidden">
-					<img src="./img/measure/measure_7.png" alt="" class="measure__scale scale-7 scale--hidden">
-					<img src="./img/measure/measure_8.png" alt="" class="measure__scale scale-8 scale--hidden">
-					<img src="./img/measure/measure_9.png" alt="" class="measure__scale scale-9 scale--hidden">
+					<img src="./img/measure/measure_2.png" alt="" class="measure__scale scale-2 transparent ">
+					<img src="./img/measure/measure_3.png" alt="" class="measure__scale scale-3 transparent ">
+					<img src="./img/measure/measure_4.png" alt="" class="measure__scale scale-4 transparent ">
+					<img src="./img/measure/measure_5.png" alt="" class="measure__scale scale-5 transparent ">
+					<img src="./img/measure/measure_6.png" alt="" class="measure__scale scale-6 transparent ">
+					<img src="./img/measure/measure_7.png" alt="" class="measure__scale scale-7 transparent ">
+					<img src="./img/measure/measure_8.png" alt="" class="measure__scale scale-8 transparent ">
+					<img src="./img/measure/measure_9.png" alt="" class="measure__scale scale-9 transparent ">
 
 					<img src="./img/measure/measure_ruby.png" alt="" class="measure__ruby">
 				</div>
@@ -54,7 +54,7 @@
 			<div class="start__button button">
 				<div class="button__wrapper">
 					<img src="./img/button/button.png" alt="" class="button__button-image">
-					<img src="./img/button/button_active.png" alt="" class="button__button-image--active">
+					<img src="./img/button/button_active.png" alt="" class="button__button-image--active hidden">
 				</div>
 				<!-- /.button__wrapper -->
 			</div>
@@ -71,24 +71,40 @@
 			<div class="start__text-block text-block">
 				<div class="text-block__wrapper">
 					<p class="text-block__paragraph text-block__paragraph--start  ">Привет! <br> проверим твою силу!</p>
-					<p class="text-block__paragraph text-block__paragraph--hit paragraph--hidden">Жми на кнопку <br> в нужный
+					<p class="text-block__paragraph text-block__paragraph--hit hidden">Жми на кнопку <br> в нужный
 						момент!</p>
+					<p class="text-block__paragraph text-block__paragraph--under100 hidden">Неплохо! <br> попробуй ещё раз.
+					</p>
+					<p class="text-block__paragraph text-block__paragraph--under130 hidden">Отлично! <br> ты почти у цели</p>
+					<p class="text-block__paragraph text-block__paragraph--hit140 hidden">ВОТ ЭТО СИЛА! <br> Ты выбил главный
+						приз! <span>Рубин</span></p>
 				</div>
 				<!-- /.text-block__wrapper -->
 			</div>
 			<!-- /.start__text-block -->
 
-			<div class="start__new-game new-game">
+			<div class="start__new-game new-game hit restart">
 				<div class="new-game__wrapper">
 					<button class="new-game__button">
 						<span class="new-game__text">новая игра</span>
 					</button>
 					<!-- /.new-game__button -->
-					<button class="hit__button button--hidden">
+				</div>
+				<div class="hit__wrapper">
+					<button class="hit__button hidden">
 						<span class="hit__text">удар!</span>
 					</button>
 					<!-- /.hit__button -->
 				</div>
+				<!-- /.hit__wrapper -->
+				<div class="restart__wrapper">
+					<button class="restart__button hidden">
+						<span class="restart__text">новая игра</span>
+						<!-- /.restart__wrapper -->
+					</button>
+					<!-- /.restart__button -->
+				</div>
+				<!-- /.restart__wrapper -->
 				<!-- /.new-game__wrapper -->
 			</div>
 			<!-- /.start__new-game new-game -->
@@ -96,8 +112,8 @@
 			<div class="start__robot robot">
 				<div class="robot__wrapper">
 					<img src="./img/robot/robot_1.png" alt="" class="robot__image robot__image-1 ">
-					<img src="./img/robot/robot_2.png" alt="" class="robot__image robot__image-2 robot__image--hidden">
-					<img src="./img/robot/robot_3.png" alt="" class="robot__image robot__image-3 robot__image--hidden">
+					<img src="./img/robot/robot_2.png" alt="" class="robot__image robot__image-2 hidden">
+					<img src="./img/robot/robot_3.png" alt="" class="robot__image robot__image-3 hidden">
 				</div>
 				<!-- /.robot__wrapper -->
 			</div>
@@ -116,6 +132,14 @@
 			</div>
 			<!-- /.start__nav nav -->
 
+			<div class="start__glow">
+				<div class="glow__wrapper">
+					<img src="./img/glow/layer_glow.png" alt="" class="glow__layer-glow animated transparent">
+					<img src="./img/glow/prize_glow.png" alt="" class="glow__prize-glow">
+				</div>
+				<!-- /.glow__wrapper -->
+			</div>
+			<!-- /.start__glow -->
 		</div>
 		<!-- /.start__wrapper -->
 	</section>
